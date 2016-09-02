@@ -188,8 +188,8 @@ SampleID: 11515,62863
 Failed: READ1 file missing
 Failed: READ2 file missing
 SampleID: 11516,62864
-Failed: READ1 is not matched
-Failed: READ2 is not matched
+Failed: READ1 is not matched (55776 vs 52268)
+Failed: READ2 is not matched (55776 vs 52268)
 SampleID: 11517,62865
 Success: READ1 is matched
 Success: READ2 is matched

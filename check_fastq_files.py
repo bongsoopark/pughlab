@@ -63,7 +63,7 @@ for line in f:
             if new_read1 == old_read1:
                 os.system("echo 'Success: READ1 is matched' >> check_fastq_files.output\n")
             else:
-                os.system("echo 'Failed: READ1 is not matched' >> check_fastq_files.output\n")
+                os.system("echo 'Failed: READ1 is not matched ("+str(new_read1)+" vs "+str(old_read1)+")' >> check_fastq_files.output\n")
         except:
             os.system("echo 'Failed: READ1 file missing' >> check_fastq_files.output\n")
 
@@ -75,7 +75,7 @@ for line in f:
             if new_read2 == old_read2:
                 os.system("echo 'Success: READ2 is matched' >> check_fastq_files.output\n")
             else:
-                os.system("echo 'Failed: READ2 is not matched' >> check_fastq_files.output\n")
+                os.system("echo 'Failed: READ2 is not matched ("+str(new_read1)+" vs "+str(old_read1)+")' >> check_fastq_files.output\n")
         except:
             os.system("echo 'Failed: READ2 file missing' >> check_fastq_files.output\n")
 
